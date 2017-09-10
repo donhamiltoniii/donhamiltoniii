@@ -1,2 +1,2 @@
-<style src="../css/recipe-styles.css"></style>
+<style src="../css/styles.css"></style>
 # Hello Recipes

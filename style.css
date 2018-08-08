@@ -1,0 +1,10 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	color: #d11d05;
+	font: 20px/1.618 sans-serif;
+}

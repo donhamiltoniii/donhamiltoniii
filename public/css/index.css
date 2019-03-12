@@ -130,3 +130,11 @@ p {
 .nav__list-item:last-child {
     margin-right: 0;
 }
+
+.article-container {
+    transition: 0.5s;
+}
+
+.hide {
+    opacity: 0;
+}

@@ -5,14 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Don Hamilton III</title>
+
+    <link rel="stylesheet" href="./static/css/style.css">
   </head>
   <body>
-    [my headshot] Don Hamilton III Java & JS | Full-stack About Me I live in
-    Columbus, OH. I am the Lead Instructor at We Can Code IT Columbus campus. I
-    have a beautiful wife and two fur babies. I code. I illustrate. I
-    photograph. I teach. I learn. Skills Tech Java, JavaScript JUnit, Mockito,
-    Hamcrest, Jest, Mocha, Karma Gradle, Maven, NPM, Yarn Spring, Spring Boot,
-    React, Angular 2+, Vue, Node Other Adobe Creative Suite CS6 Adobe Lightroom
-    Affinity Designer &copy; 2019 Don Hamilton III
+    <header class="header">
+      <img class="header__avatar" src="./static/images/donny-and-lindsey.jpg" alt="Me and my wife">
+      <h1 class="header__title">Don Hamilton III</h1>
+      <h2 class="header__subtitle">Java & JS | Full-stack</h2>
+    </header>
+    
+    <main>
+      <div class="container">
+        <section class="portfolio-section">
+          <h3 class="portfolio-section__title">About Me</h3>
+          <p class="portfolio-section__content">I live in Columbus, OH. I am the Lead Instructor at We Can Code IT Columbus campus. I have a beautiful wife and two fur babies. I code. I illustrate. I photograph. I teach. I learn.</p>
+        </section>
+
+        <section class="portfolio-section">
+          <h3 class="portfolio-section__title">Skills</h3>
+          <h4 class="portfolio-section__subtitle">Tech</h4>
+          <ul class="portfolio-section__list">
+            <li class="portfolio-section__list-item">Java, JavaScript</li>
+            <li class="portfolio-section__list-item">JUnit, Mockito, Hamcrest, Jest, Mocha, Karma</li>
+            <li class="portfolio-section__list-item">Gradle, Maven, NPM, Yarn</li>
+            <li class="portfolio-section__list-item">Spring, Spring Boot, React, Angular 2+, Vue, Node</li>
+          </ul>
+
+          <h4 class="portfolio-section__subtitle">Other</h4>
+          <ul class="portfolio-section__list">
+            <li class="portfolio-section__list-item">Adobe Creative Suite CS6</li> 
+            <li class="portfolio-section__list-item">Adobe Lightroom</li>
+            <li class="portfolio-section__list-item">Affinity Designer</li>
+          </ul>
+        </section>
+      </div><!-- /.container -->
+    </main>
+
+    <footer class="footer">
+      <small class="footer__copy">&copy; 2019 Don Hamilton III</small>
+    </footer>
   </body>
 </html>

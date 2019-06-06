@@ -43,7 +43,7 @@ ul {
     border: 2px solid var(--light);
     border-radius: .25rem;
     margin-bottom: 1rem;
-    width: 7rem;
+    width: 10rem;
 }
 
 .header__title {
@@ -59,6 +59,11 @@ ul {
     border-bottom: 1px solid var(--green);
     margin-bottom: 2rem;
     padding-bottom: 1rem;
+}
+
+.portfolio-section:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
 }
 
 .portfolio-section__title {
@@ -91,4 +96,8 @@ ul {
 .container {
     margin: 0 auto;
     max-width: 30rem;
+}
+
+.wrapper {
+    background-color: var(--light);
 }

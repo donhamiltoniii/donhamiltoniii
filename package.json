@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest test"
+    "test": "jest test",
+    "start": "parcel index.html",
+    "predeploy": "rm -rf dist && parcel build index.html",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -18,6 +21,8 @@
   },
   "homepage": "https://github.com/donhamiltoniii/donhamiltoniii.github.io#readme",
   "dependencies": {
-    "jest": "^24.5.0"
+    "gh-pages": "^2.0.1",
+    "jest": "^24.5.0",
+    "parcel": "^1.12.3"
   }
 }

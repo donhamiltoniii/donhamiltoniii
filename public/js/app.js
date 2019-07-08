@@ -40,9 +40,16 @@ function run() {
     deleteArticles()
 }
 
+function blowEverythingUp() {
+    const app = document.querySelector('.article-container')
+    app.innerHTML = 'This is parcel working with GitHub Pages!'
+}
+
+blowEverythingUp()
+
 // run()
 
 module.exports = {
-    toggleHide: toggleHide,
-    run: run
+    toggleHide,
+    run
 }

@@ -117,79 +117,73 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"node_modules/.registry.npmjs.org/parcel/1.12.3/node_modules/parcel/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
+})({"public/js/module.js":[function(require,module,exports) {
+"use strict";
 
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
 
-  return bundleURL;
+var _default = function _default() {
+  console.log('Hello, world');
+};
+
+exports.default = _default;
+},{}],"public/js/app.js":[function(require,module,exports) {
+"use strict";
+
+var _module = _interopRequireDefault(require("./module"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// document.getElementById
+// document.getElementsByClassName
+// document.getElementsByTagName
+// let title = 'title';
+// const articleDeleteButtons = document.querySelectorAll('.delete-article');
+// const articleToggleButton = document.querySelector('.hide-articles')
+// var abc = "doesn't matter"
+// // Able to change this value
+// title = document.querySelector('h1');
+// // this doesn't work
+// // buttons = "Something else";
+// // Manipulate something about the title
+// title.textContent = 'Some new value';
+// // Events
+// function deleteArticles() {
+//     articleDeleteButtons.forEach(function foo(button) {
+//         button.addEventListener('click', function onButtonClick() {
+//             const articleToDelete = this.parentElement.parentElement
+//             // console.log(articleToDelete)
+//             console.log(articleToDelete.remove())
+//         })
+//     })
+// }
+// articleToggleButton.addEventListener('click', () => {
+//     toggleHide(document.querySelector('.article-container'))
+// });
+function toggleHide(element) {
+  element.classList.toggle('hide');
 }
 
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-
-  return '/';
+function run() {
+  deleteArticles();
 }
 
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+function blowEverythingUp() {
+  var app = document.querySelector('.article-container');
+  app.innerHTML = 'This is parcel working with GitHub Pages!';
 }
 
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"node_modules/.registry.npmjs.org/parcel/1.12.3/node_modules/parcel/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
+blowEverythingUp();
+(0, _module.default)(); // run()
 
-function updateLink(link) {
-  var newLink = link.cloneNode();
-
-  newLink.onload = function () {
-    link.remove();
-  };
-
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-
-var cssTimeout = null;
-
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
-
-    cssTimeout = null;
-  }, 50);
-}
-
-module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/.registry.npmjs.org/parcel/1.12.3/node_modules/parcel/src/builtins/bundle-url.js"}],"public/css/index.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/.registry.npmjs.org/parcel/1.12.3/node_modules/parcel/src/builtins/css-loader.js"}],"node_modules/.registry.npmjs.org/parcel/1.12.3/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+module.exports = {
+  toggleHide: toggleHide,
+  run: run
+};
+},{"./module":"public/js/module.js"}],"node_modules/.registry.npmjs.org/parcel/1.12.3/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +211,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53307" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51838" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -392,5 +386,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/.registry.npmjs.org/parcel/1.12.3/node_modules/parcel/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/css.92606ba4.js.map
+},{}]},{},["node_modules/.registry.npmjs.org/parcel/1.12.3/node_modules/parcel/src/builtins/hmr-runtime.js","public/js/app.js"], null)
+//# sourceMappingURL=/app.279dbfa4.js.map

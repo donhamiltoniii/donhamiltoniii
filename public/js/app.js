@@ -32,6 +32,8 @@
 //     toggleHide(document.querySelector('.article-container'))
 // });
 
+import hello from './module'
+
 function toggleHide(element) {
     element.classList.toggle('hide')
 }
@@ -46,6 +48,8 @@ function blowEverythingUp() {
 }
 
 blowEverythingUp()
+
+hello()
 
 // run()
 

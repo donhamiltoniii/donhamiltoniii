@@ -1,10 +1,24 @@
-- 👋 Hi, I’m @donhamiltoniii
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+# Hello!
 
-<!---
-donhamiltoniii/donhamiltoniii is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+👋 Hi, I’m @donhamiltoniii. I am a developer who loves to learn and teach about programming. Also I love cats.
+
+## 👀 I’m interested in:
+
+- Cats
+- TypeScript
+- Occult Symbolism
+- Tacos
+- Streetwear Brands
+- Tattoos
+
+## 🌱 I’m currently learning:
+
+Some new full-stack technologies. Mostly everything I can about the inner workings of NextJS.
+
+## 💞️ I’m looking to collaborate on:
+
+Anything involving teaching software development! Help me help you help other people!
+
+## 📫 How to reach me
+
+donhamiltoniii@gmail.com

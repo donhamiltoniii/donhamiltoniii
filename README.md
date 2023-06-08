@@ -6,7 +6,6 @@
 
 - Cats
 - TypeScript
-- Occult Symbolism
 - Tacos
 - Streetwear Brands
 - Tattoos

@@ -6,18 +6,39 @@
 
 - Cats
 - TypeScript
-- Tacos
+- K8S/Docker
+- DevOps
+- GitOps
 - Streetwear Brands
 - Tattoos
+- Hats
+- Calisthenics
+- Brazilian Jiu Jitsu
+- Muay Thai
 
 ## 🌱 I’m currently learning:
 
-Some new full-stack technologies. Mostly everything I can about the inner workings of NextJS.
+- Kubernetes
+- ArgoCD
+- Docker/Portainer
+- homelabbing
+- Go
+- Linux
+- Terraform
+- Ansible
 
 ## 💞️ I’m looking to collaborate on:
 
-Anything involving teaching software development! Help me help you help other people!
+- Automating Processes
+- Architecture
+- System Design
+- System Administration
+- 
 
 ## 📫 How to reach me
 
-donhamiltoniii@gmail.com
+[Email Me!](mailto:donhamiltoniii@pm.me)
+
+## Resume
+
+If you're interested in hiring me, check out my [Resume Repo](https://github.com/donhamiltoniii/resume)

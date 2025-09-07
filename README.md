@@ -33,7 +33,6 @@
 - Architecture
 - System Design
 - System Administration
-- 
 
 ## 📫 How to reach me
 
